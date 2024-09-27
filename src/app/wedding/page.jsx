@@ -106,7 +106,7 @@ export default function WeddingsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Weddings
+          Bodas
         </motion.h1>
         <Masonry
           breakpointCols={breakpointColumnsObj}

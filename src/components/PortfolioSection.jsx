@@ -5,19 +5,19 @@ import Link from 'next/link';
 
 const portfolioItems = [
   {
-    title: 'Wedding',
+    title: 'Bodas',
     image:
       'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
     href: '/wedding',
   },
   {
-    title: 'Corporate',
+    title: 'Corporativo',
     image:
       'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
     href: '/corporate',
   },
   {
-    title: 'Lifestyle',
+    title: 'Sesiones',
     image:
       'https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80',
     href: '/lifestyle',
@@ -35,10 +35,10 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Our Portfolio
+            Portafolio
           </h2>
           <p className="mt-4 text-xl text-gray-500">
-            Discover our diverse range of photography services
+            Descubre nuestra amplia gama de servicios
           </p>
         </motion.div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

@@ -12,13 +12,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            {/* <img className="h-8 w-auto" src="/logo.svg" alt="Sttoria" /> */}
-            <Camera color="#ddae03" className="h-8 w-auto" />
+            = <Camera color="#ddae03" className="h-8 w-auto" />
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="#portfolio">Portfolio</NavLink>
-            <NavLink href="#contact">Contact Us</NavLink>
+            <NavLink href="/">Inicio</NavLink>
+            <NavLink href="#portfolio">Portafolio</NavLink>
+            <NavLink href="#contact">Contacto</NavLink>
           </div>
           <div className="sm:hidden flex items-center">
             <button
@@ -45,10 +44,13 @@ const Navbar = () => {
           closed: { opacity: 0, height: 0 },
         }}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          <MobileNavLink href="#home">Home</MobileNavLink>
-          <MobileNavLink href="#portfolio">Portfolio</MobileNavLink>
-          <MobileNavLink href="#contact">Contact Us</MobileNavLink>
+        <div
+          className="px-2 pt-2 pb-3 space-y-1"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <MobileNavLink href="/">Inicio</MobileNavLink>
+          <MobileNavLink href="#portfolio">Portafolio</MobileNavLink>
+          <MobileNavLink href="#contact">Contacto</MobileNavLink>
         </div>
       </motion.div>
     </nav>
