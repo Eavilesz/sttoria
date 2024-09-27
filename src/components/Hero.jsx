@@ -24,8 +24,8 @@ const Hero = () => {
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               We specialize in creating timeless memories through our lens. From
-              weddings to corporate events, we're here to capture your special
-              moments.
+              weddings to corporate events, we&apos;re here to capture your
+              special moments.
             </p>
           </main>
         </motion.div>
