@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
             <NavLink href="/">Inicio</NavLink>
-            <NavLink href="#portfolio">Portafolio</NavLink>
+            <NavLink href="/#portfolio">Portafolio</NavLink>
             <NavLink href="#contact">Contacto</NavLink>
           </div>
           <div className="sm:hidden flex items-center">

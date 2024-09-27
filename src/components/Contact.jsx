@@ -14,7 +14,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Contact Us
+            Contáctanos
           </h2>
           <p className="mt-4 text-xl text-gray-500">
             ¡Haz clic aquí para agendar tu sesión y capturar los momentos más
@@ -32,7 +32,7 @@ const Contact = () => {
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Contact via WhatsApp
+              Contáctanos via WhatsApp
             </a>
           </motion.div>
         </motion.div>
