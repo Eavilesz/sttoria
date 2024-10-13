@@ -2,68 +2,42 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import disneyParty from '../../../public/video-tumbnails/disney-party.avif';
+import bodaRuby from '../../../public/video-tumbnails/boda-ruby.avif';
+import quinceIsabela from '../../../public/video-tumbnails/quince-isabela.avif';
+import bodaMaria from '../../../public/video-tumbnails/boda-maria-jorge.avif';
+import bodaLilian from '../../../public/video-tumbnails/boda-lilian-luis.avif';
 
-// Sample video data (replace with your actual video data)
 const videos = [
   {
     id: 1,
-    title: 'Beautiful Wedding Ceremony',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
+    title: 'Quinceañera al estilo Disney',
+    src: 'https://drive.google.com/file/d/1LQ4RuPaDQWuBXJAx6abIpCz3MOcH9JUT/preview',
+    thumbnail: disneyParty,
   },
   {
     id: 2,
-    title: 'Exciting Corporate Event',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
+    title: 'Boda Ruby',
+    src: 'https://drive.google.com/file/d/1KPSjP-I2dl-CCkGujqs64EFc9iwGouf0/preview',
+    thumbnail: bodaRuby,
   },
   {
     id: 3,
-    title: 'Serene Nature Photoshoot',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
+    title: 'Quinceañera Isabela',
+    src: 'https://drive.google.com/file/d/1BID5Tm51IOznvr9Q3iLl92Duo0xMtKZn/preview',
+    thumbnail: quinceIsabela,
   },
   {
     id: 4,
-    title: 'Vibrant Street Photography',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
+    title: 'Boda María y Jorge',
+    src: 'https://drive.google.com/file/d/1LYaipcCuRZRUtLejI3ZIwVKtio2c_R8U/preview',
+    thumbnail: bodaMaria,
   },
   {
     id: 5,
-    title: 'Intimate Family Portraits',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
-  },
-  {
-    id: 6,
-    title: 'Dramatic Landscape Timelapse',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
-  },
-  {
-    id: 7,
-    title: 'Artistic Black and White Series',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
-  },
-  {
-    id: 8,
-    title: 'Behind the Scenes: Studio Setup',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
-  },
-  {
-    id: 9,
-    title: 'Golden Hour Portrait Session',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
-  },
-  {
-    id: 10,
-    title: 'Urban Architecture Photography',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: '/placeholder.svg',
+    title: 'Boda Lilian y Luis',
+    src: 'https://drive.google.com/file/d/1ave-qZm5iF81Qe4QVLVFSGfXPP1u3K6Z/preview',
+    thumbnail: bodaLilian,
   },
 ];
 
@@ -71,7 +45,7 @@ export default function VideosPage() {
   const [selectedVideo, setSelectedVideo] = useState(videos[0]);
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-gray-100 mt-16">
       {/* Video player */}
       <div className="w-2/3 bg-black flex flex-col">
         <div className="flex-grow flex items-center justify-center">

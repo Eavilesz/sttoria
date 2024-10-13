@@ -11,10 +11,9 @@ const portfolioItems = [
     href: '/wedding',
   },
   {
-    title: 'Corporativo',
-    image:
-      'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-    href: '/corporate',
+    title: 'Videos',
+    image: '/video-tumbnails/disney-party.avif',
+    href: '/videos',
   },
   {
     title: 'Sesiones',

@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, Camera, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            = <Camera color="#ddae03" className="h-8 w-auto" />
+            <Image
+              src="/logos/sttoria-logo.png"
+              width={200}
+              height={1000}
+              alt="sttoria logo"
+            />
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
             <NavLink href="/">Inicio</NavLink>
