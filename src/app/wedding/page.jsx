@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Masonry from 'react-masonry-css';
 
-const photoList = Array.from({ length: 16 }, (_, i) => `foto${i + 1}.avif`);
-console.log(photoList);
+const photoList = Array.from({ length: 50 }, (_, i) => `foto${i + 1}.avif`);
 
 export default function WeddingsPage() {
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -15,10 +14,9 @@ export default function WeddingsPage() {
   }, []);
 
   const breakpointColumnsObj = {
-    default: 4,
-    1100: 3,
-    700: 2,
-    500: 1,
+    default: 3,
+    1100: 2,
+    700: 1,
   };
 
   return (

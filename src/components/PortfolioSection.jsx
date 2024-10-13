@@ -15,12 +15,6 @@ const portfolioItems = [
     image: '/video-tumbnails/disney-party.avif',
     href: '/videos',
   },
-  {
-    title: 'Sesiones',
-    image:
-      'https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80',
-    href: '/lifestyle',
-  },
 ];
 
 const Portfolio = () => {
@@ -37,12 +31,14 @@ const Portfolio = () => {
             Portafolio
           </h2>
           <p className="mt-4 text-xl text-gray-500">
-            Descubre nuestra amplia gama de servicios
+            Descubre lo que ofrecemos para ti
           </p>
         </motion.div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3"> */}
+        <div className="mt-12 flex gap-8 justify-center flex-wrap">
           {portfolioItems.map((item, index) => (
             <motion.div
+              className="w-full md:w-2/6"
               key={item.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

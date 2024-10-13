@@ -14,6 +14,8 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Image
+              style={{ width: 'auto', height: 'auto' }}
+              priority
               src="/logos/sttoria-logo.png"
               width={200}
               height={1000}
@@ -23,7 +25,9 @@ const Navbar = () => {
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
             <NavLink href="/">Inicio</NavLink>
             <NavLink href="/#portfolio">Portafolio</NavLink>
-            <NavLink href="#contact">Contacto</NavLink>
+            <NavLink href="https://wa.me/+593990319194" isExternal>
+              Contacto
+            </NavLink>
           </div>
           <div className="sm:hidden flex items-center">
             <button
@@ -56,17 +60,20 @@ const Navbar = () => {
         >
           <MobileNavLink href="/">Inicio</MobileNavLink>
           <MobileNavLink href="#portfolio">Portafolio</MobileNavLink>
-          <MobileNavLink href="#contact">Contacto</MobileNavLink>
+          <MobileNavLink href="https://wa.me/+593990319194">
+            Contacto
+          </MobileNavLink>
         </div>
       </motion.div>
     </nav>
   );
 };
 
-const NavLink = ({ href, children }) => (
+const NavLink = ({ href, isExternal, children }) => (
   <a
     href={href}
     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+    target={isExternal ? '_blank' : '_self'}
   >
     {children}
   </a>

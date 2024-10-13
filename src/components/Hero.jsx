@@ -37,7 +37,7 @@ const Hero = () => {
         >
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-lg shadow-xl"
-            src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            src={'/weddings/portada.webp'}
             alt="Photographer in action"
           />
         </motion.div>

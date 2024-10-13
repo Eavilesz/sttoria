@@ -26,7 +26,7 @@ const Contact = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/+593990319194"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"

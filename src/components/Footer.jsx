@@ -1,4 +1,5 @@
-import { Facebook, Instagram } from 'lucide-react';
+import { FaTiktok } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -7,13 +8,21 @@ const Footer = () => {
         <div className="flex justify-between items-center">
           <p className="text-gray-400">&copy; Sttoria</p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-gray-300">
-              <span className="sr-only">Facebook</span>
-              <Facebook className="h-6 w-6" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-gray-300">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/sttoria_ph/"
+              className="text-gray-400 hover:text-gray-300"
+            >
               <span className="sr-only">Instagram</span>
-              <Instagram className="h-6 w-6" />
+              <FaInstagram className="h-6 w-6" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@sttoria_ph"
+              className="text-gray-400 hover:text-gray-300"
+            >
+              <span className="sr-only">Instagram</span>
+              <FaTiktok className="h-6 w-6" />
             </a>
           </div>
         </div>
