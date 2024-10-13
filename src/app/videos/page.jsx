@@ -113,7 +113,7 @@ export default function VideosPage() {
   );
 
   const MobileLayout = () => (
-    <div className="flex flex-col h-screen bg-gray-100">
+    <div className="flex flex-col h-screen bg-gray-100 mt-16">
       <div className="h-1/2">
         <VideoPlayer video={selectedVideo} />
       </div>
