@@ -3,7 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800">
+    <footer className="bg-gray-800/50">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <p className="text-gray-400">&copy; Sttoria</p>

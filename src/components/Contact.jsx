@@ -5,7 +5,7 @@ import { MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-white py-12 sm:py-16 lg:py-20">
+    <section id="contact" className="bg-white/25 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center"
@@ -13,10 +13,10 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Contáctanos
           </h2>
-          <p className="mt-4 text-xl text-gray-500">
+          <p className="mt-4 text-xl text-gray-300">
             ¡Haz clic aquí para agendar tu sesión y capturar los momentos más
             especiales con nosotros a través de WhatsApp!
           </p>

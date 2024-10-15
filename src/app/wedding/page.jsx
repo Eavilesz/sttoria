@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Masonry from 'react-masonry-css';
 
-const photoList = Array.from({ length: 50 }, (_, i) => `foto${i + 1}.avif`);
+const photoList = Array.from({ length: 50 }, (_, i) => `foto${i + 2}.avif`);
 
 export default function WeddingsPage() {
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -20,10 +20,10 @@ export default function WeddingsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-16">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 mt-16">
       <div className=" mx-auto">
         <motion.h1
-          className="text-4xl font-extrabold text-gray-900 text-center mb-12"
+          className="text-4xl font-extrabold text-gray-200 text-center mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

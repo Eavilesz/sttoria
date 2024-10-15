@@ -54,8 +54,8 @@ export default function VideosPage() {
 
   const VideoCard = ({ video, isSelected, onClick }) => (
     <div
-      className={`flex p-4 hover:bg-gray-100 cursor-pointer ${
-        isSelected ? 'bg-gray-200' : ''
+      className={`flex p-4 hover:bg-slate-100/25 cursor-pointer border-y border-slate-100/20 ${
+        isSelected ? 'bg-gray-200/30' : ''
       }`}
       onClick={onClick}
     >
@@ -70,7 +70,9 @@ export default function VideosPage() {
         />
       </div>
       <div className="ml-4 flex flex-col justify-center">
-        <h3 className="text-sm font-medium text-gray-900">{video.title}</h3>
+        <h3 className="text-sm font-medium text-lg text-gray-100">
+          {video.title}
+        </h3>
       </div>
     </div>
   );
@@ -88,18 +90,18 @@ export default function VideosPage() {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="bg-white p-4">
+      <div className=" p-4">
         <h2 className="text-xl font-bold text-gray-900">{video.title}</h2>
       </div>
     </div>
   );
 
   const DesktopLayout = () => (
-    <div className="flex h-screen bg-gray-100 mt-16">
+    <div className="flex h-screen mt-16">
       <div className="w-2/3">
         <VideoPlayer video={selectedVideo} />
       </div>
-      <div className="w-1/3 bg-white overflow-y-auto">
+      <div className="w-1/3  overflow-y-auto">
         {videos.map((video) => (
           <VideoCard
             key={video.id}
@@ -113,11 +115,11 @@ export default function VideosPage() {
   );
 
   const MobileLayout = () => (
-    <div className="flex flex-col h-screen bg-gray-100 mt-16">
+    <div className="flex flex-col h-screen mt-16">
       <div className="h-1/2">
         <VideoPlayer video={selectedVideo} />
       </div>
-      <div className="h-1/2 overflow-y-auto bg-white">
+      <div className="h-1/2 overflow-y-auto ">
         {videos.map((video) => (
           <VideoCard
             key={video.id}
