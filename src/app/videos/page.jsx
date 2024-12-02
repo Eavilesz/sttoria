@@ -15,24 +15,24 @@ const videos = [
     src: 'https://drive.google.com/file/d/1LQ4RuPaDQWuBXJAx6abIpCz3MOcH9JUT/preview',
     thumbnail: disneyParty,
   },
-  {
-    id: 2,
-    title: 'Boda Ruby y Mauricio',
-    src: 'https://drive.google.com/file/d/1KPSjP-I2dl-CCkGujqs64EFc9iwGouf0/preview',
-    thumbnail: bodaRuby,
-  },
-  {
-    id: 3,
-    title: 'Quinceañera Isabela',
-    src: 'https://drive.google.com/file/d/1BID5Tm51IOznvr9Q3iLl92Duo0xMtKZn/preview',
-    thumbnail: quinceIsabela,
-  },
-  {
-    id: 4,
-    title: 'Boda María y Jorge',
-    src: 'https://drive.google.com/file/d/1LYaipcCuRZRUtLejI3ZIwVKtio2c_R8U/preview',
-    thumbnail: bodaMaria,
-  },
+  // {
+  //   id: 2,
+  //   title: 'Boda Ruby y Mauricio',
+  //   src: 'https://drive.google.com/file/d/1KPSjP-I2dl-CCkGujqs64EFc9iwGouf0/preview',
+  //   thumbnail: bodaRuby,
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Quinceañera Isabela',
+  //   src: 'https://drive.google.com/file/d/1BID5Tm51IOznvr9Q3iLl92Duo0xMtKZn/preview',
+  //   thumbnail: quinceIsabela,
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Boda María y Jorge',
+  //   src: 'https://drive.google.com/file/d/1LYaipcCuRZRUtLejI3ZIwVKtio2c_R8U/preview',
+  //   thumbnail: bodaMaria,
+  // },
   {
     id: 5,
     title: 'Boda Lilian y Luis',
